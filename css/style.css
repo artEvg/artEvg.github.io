@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@200;300&family=Playpen+Sans:wght@100&family=Raleway:wght@500&family=Voltaire&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+background-color:lemonchiffon;
+}
+
+.Container{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.body{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.box{
+align-self: center;
+background-color: cadetblue;
+height: 300px;
+width: 30%;
+justify-content: center;
+border-radius: 15px;
+margin: 10px;
+align-items: center;
+display: flex;
+flex-flow: column;
+gap: 30px;
+}
+
+.text{
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 80px;
+  margin-top: 40px;
+  width: 80%;
+}
+
+@media only screen and (max-width:840px) {
+  .box {
+      width:40%;
+      
+  }
+  .body {
+     
+      display: flex;
+    
+      flex-wrap: wrap;
+  }
+
+  .text {
+      font-size: 40px;
+     
+    }
+
+ 
+}
+
+@media only screen and (max-width:600px) {
+  .box {
+      width: 70%;
+   
+  }
+  .body {
+      flex-flow: column;
+  }
+ 
+  .text {
+      font-size: 30px;
+     
+    }
+}
